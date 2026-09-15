@@ -24,12 +24,15 @@ connector -> activity -> agent analysis is in [`AGENT-MAPPING.md`](AGENT-MAPPING
 ```bash
 git clone https://github.com/e2b-dev/awesome-ai-agents
 mkdir -p ~/.cursor/plugins/local
-ln -s "$(pwd)/awesome-ai-agents/cursor-plugin" ~/.cursor/plugins/local/awesome-ai-agents-workflows
+cp -r awesome-ai-agents/cursor-plugin ~/.cursor/plugins/local/awesome-ai-agents-workflows
 ```
 
-Fully quit and relaunch Cursor. The six subagents appear in the Task tool
-list and the two commands are available as `/agents-install` and
-`/agents-verify`.
+Copy rather than symlink: Cursor only loads a symlinked plugin when the link
+target resolves inside `~/.cursor/plugins/local`. Fully quit and relaunch
+Cursor (or run "Developer: Reload Window"). The six subagents appear in the
+Task tool list and the two commands are available as `/agents-install` and
+`/agents-verify`. On Teams/Enterprise plans an admin must allow local plugin
+imports.
 
 Alternatively copy `agents/*.md` into a project's `.cursor/agents/` if you
 only want the subagents for one repository.
