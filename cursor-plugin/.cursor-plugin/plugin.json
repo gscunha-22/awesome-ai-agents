@@ -1,0 +1,31 @@
+{
+  "name": "awesome-ai-agents-workflows",
+  "displayName": "Awesome AI Agents - Connector Workflows",
+  "version": "0.1.0",
+  "description": "Subagents, skills and installers that import the agents from the awesome-ai-agents list best matched to the connectors you already use in Cursor (Gmail, Calendar, Notion, Drive, Granola, Mem0, Supabase, Neon, Atlan, Vercel, Netlify, Grafana, Bright Data, Apify, Firecrawl, Context.dev, Slack).",
+  "author": {
+    "name": "awesome-ai-agents contributors"
+  },
+  "homepage": "https://github.com/e2b-dev/awesome-ai-agents",
+  "repository": "https://github.com/e2b-dev/awesome-ai-agents",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": [
+    "ai-agents",
+    "aider",
+    "crewai",
+    "gpt-researcher",
+    "open-interpreter",
+    "vanna",
+    "gmail",
+    "notion",
+    "supabase",
+    "vercel",
+    "workflows"
+  ],
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "commands": [
+    "commands/agents-install.md",
+    "commands/agents-verify.md"
+  ]
+}
